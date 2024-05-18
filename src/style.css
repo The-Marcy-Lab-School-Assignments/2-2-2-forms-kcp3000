@@ -1,0 +1,16 @@
+select,
+fieldset {
+  display: block;
+  margin: 1rem 0;
+}
+
+button {
+  display: block;
+  margin: 1rem auto;
+}
+
+form {
+  width: 19rem;
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
