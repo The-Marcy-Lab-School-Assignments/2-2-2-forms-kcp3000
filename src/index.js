@@ -1,5 +1,5 @@
 /** GENERAL FEEDBACK:
- *
+ * Great job getting all test cases to pass!
  */
 
 const handleSubmit = (e) => {
@@ -7,6 +7,7 @@ const handleSubmit = (e) => {
   const form = e.target
   const formValues = Object.fromEntries(new FormData(form))
   formValues.didLikeAssignment = Boolean(formValues.didLikeAssignment)
+  /** FEEDBACK: Make sure you create the habit of using {} when you use if/else statements! */
   if (Boolean(formValues.didLikeAssignment) === true) formValues['didLikeAssignment'] = "Yes"
   else formValues['didLikeAssignment'] = "No"
   console.log(formValues);
@@ -25,4 +26,5 @@ const handleSubmit = (e) => {
 };
 
 document.querySelector("form").addEventListener("submit", handleSubmit)
+/** FEEDBACK: Submit events can only be placed on forms! You do not need this line of code since you are already taking care of the dom manipulation with the other submit event! */
 document.querySelector("#results").addEventListener("submit", handleSubmit)
